@@ -1,0 +1,83 @@
+body {
+    background-image: url("../images/main_bg.jpeg");
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+}
+.main {
+    height: 100vh ;
+    /*background-color: white;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatWrapper {
+    width: 800px;
+    height: 600px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.chatField {
+    width: 740px;
+    height: 480px;
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: scroll;
+}
+.chatField div {
+    margin-bottom: 15px;
+}
+.botMessage {
+    padding: 10px;
+    background-color: #f9cdff;
+    border-radius: 15px;
+    max-width: 360px;
+}
+.userMessage {
+    padding: 10px;
+    background-color: #9d56ff;
+    border-radius: 15px;
+    max-width: 360px;
+    margin-left: auto;
+}
+.botMessage p, .userMessage p {
+    line-height: 25px;
+}
+
+.inputWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    padding: 10px;
+    min-width: 400px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+input:focus {
+    outline: none !important;
+    border-color: #f9cdff;
+    box-shadow: 0 0 10px #f9cdff;
+}
+input::placeholder {
+    color: black;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+button {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+}

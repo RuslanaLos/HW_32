@@ -1,0 +1,1 @@
+sendButton.addEventListener("click", showUserMessage);
